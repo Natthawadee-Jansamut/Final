@@ -18,7 +18,7 @@
 
   // โหลด HDR เป็นพื้นหลัง + environment
   const rgbeLoader = new THREE.RGBELoader();
-  rgbeLoader.load("kloppenheim_06_puresky_4k.hdr", function(texture) {
+  rgbeLoader.load("kloppenheim_06_puresky_1k.hdr", function(texture) {
     texture.mapping = THREE.EquirectangularReflectionMapping;
     scene.background = texture;   // ทำให้ HDR เป็นพื้นหลัง
     scene.environment = texture;  // ใช้ environment map สำหรับวัสดุ PBR
@@ -58,4 +58,5 @@
 </script>
 </body>
 </html>
+
 
